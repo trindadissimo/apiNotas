@@ -6,7 +6,7 @@ import lombok.Data;
 public class CadastroDTO {
 
     private Long id;
-    private String nome;
+    private String name;
     
 	public Long getId() {
 		return id;
@@ -14,11 +14,11 @@ public class CadastroDTO {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
+	public String getname() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setname(String name) {
+		this.name = name;
 	}
 
 }

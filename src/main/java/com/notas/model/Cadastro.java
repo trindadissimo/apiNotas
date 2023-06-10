@@ -25,7 +25,7 @@ public class Cadastro {
     @GeneratedValue
     private Long id;
 
-    private String nome;
+    private String name;
 
     @OneToOne(mappedBy = "cadastro")
     private Usuario usuario;
@@ -39,12 +39,12 @@ public class Cadastro {
             inverseJoinColumns = @JoinColumn(name = "checklist_id"))
     private List<Checklist> checklists;
 
-	public String getNome() {
-		return nome;
+	public String getname() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setname(String name) {
+		this.name = name;
 	}
 
 }
